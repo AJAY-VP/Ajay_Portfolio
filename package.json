@@ -2,7 +2,7 @@
   "name": "ajay_portfolio",
   "version": "1.0.0",
   "description": "Ajay's Portfolio website",
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
