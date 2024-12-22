@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir build",
+    "build": "parcel build index.html --dist-dir build --public-url /Ajay_Portfolio/",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/AJAY-VP/Ajay_Portfolio/issues"
   },
-  "homepage": "https://github.com/AJAY-VP/Ajay_Portfolio",
+  "homepage": "https://ajay-vp.github.io/Ajay_Portfolio",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
