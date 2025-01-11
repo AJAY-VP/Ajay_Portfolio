@@ -5,9 +5,9 @@ export const ExperiencesData = [
     startDate: "Oct 2023",
     endDate: "Present",
     responsibilities: [
-      "Architected the backend for an AI marketplace enabling admin-configurable applications based on agent availability, with RBAC to manage access for specific user groups.",
+      "Developed the backend for an AI marketplace enabling admin-configurable applications based on agent availability, with RBAC to manage access for specific user groups.",
       "Designed and developed a scalable, maintainable, and secure backend for a CXO-level chatbot application from scratch, ensuring high performance and reliability.",
-      "Architected a solution for a mobile app with a configuration-driven UI, enabling seamless data rendering without hard-coding, enhancing scalability and maintainability.GraphQL is used for rapid response times. Strengthened security with webhooks authentication, ensuring each request is validated.",
+      "Developed a solution for a mobile app with a configuration-driven UI, enabling seamless data rendering without hard-coding, enhancing scalability and maintainability.GraphQL is used for rapid response times. Strengthened security with webhooks authentication, ensuring each request is validated.",
       "Created an automation test script to validate the api response,where the number of requests is equivalent to 100k. Failures are handled without human intervention automatically. Reduced script execution time by 50%.",
     ],
     skills: ["Node.js", "Git", "AWS", "Hasura", "React"],
@@ -23,7 +23,6 @@ export const ExperiencesData = [
       "Led the complete backend setup for a standalone survey tool, facilitating integration with multiple web applications.",
       "Designed the architecture based on microservices, reducing REST API calls by 50% with express- gateway implementation.",
       "Successfully transformed desktop applications into web applications using microservices architecture.",
-      "Utilized Redis for offline notification messages, enabling users to receive missed messages upon login.",
       "Implemented real-time notification updates using socket.io, enhancing user engagement.",
     ],
     skills: [
@@ -42,11 +41,18 @@ export const ExperiencesData = [
 
 export const ProjectsData = [
   {
+    name: "Portfolio Website",
+    githubLink: "https://github.com/AJAY-VP/Ajay_Portfolio",
+    demoLink: "https://ajay-vp.github.io/Ajay_Portfolio/",
+    description:
+      "Welcome to my portfolio! This React-based website showcases my work, skills, and experience as a full-stack developer. Hosted on GitHub Pages, it highlights my expertise in JavaScript technologies, web application development.",
+  },
+  {
     name: "ZenMode",
     githubLink: "https://github.com/AJAY-VP/ZenMode",
     demoLink: "",
     description:
-      "The project aims to provide users with a seamless and effective way to relax their eyes during extended work or study sessions, enhancing overall well-being and productivity.",
+      "The project aims to provide users with a seamless and effective way to relax their eyes during extended work or study sessions, enhancing overall well-being and productivity. I used c++ to build this and used makefile to package the application.",
   },
 ];
 

@@ -1,5 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import animatedPic from "../../assets/Animated.webp";
+import zenmode from "../../assets/zenmode.jpeg";
+import portfolio from "../../assets/portfolio.png";
 import {
   ExperiencesData,
   ProjectsData,
@@ -74,27 +76,29 @@ const Skills = () => {
 const WorkExperience = () => {
   const experiences = ExperiencesData;
   return (
-    <div className="work-experience">
-      <h2>Work Experience</h2>
-      {experiences.map((experience, index) => (
-        <div key={index} className="experience-card">
-          <h3>{experience.companyName}</h3>
-          <p className="title-dates">
-            <span className="title">{experience.title}</span> •{" "}
-            <span className="dates">
-              {experience.startDate} - {experience.endDate}
-            </span>
-          </p>
-          <ul className="responsibilities">
-            {experience.responsibilities.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
-          <p className="skills">
-            <strong>Skills Used:</strong> {experience.skills.join(", ")}
-          </p>
-        </div>
-      ))}
+    <div>
+      <h2 className="workexp-header">Work Experience</h2>
+      <div className="work-experience">
+        {experiences.map((experience, index) => (
+          <div key={index} className="experience-card">
+            <h2 className="exp-company-name">{experience.companyName}</h2>
+            <p className="title-dates">
+              <span className="exp-title">{experience.title}</span> •{" "}
+              <span className="dates">
+                {experience.startDate} - {experience.endDate}
+              </span>
+            </p>
+            <ul className="responsibilities">
+              {experience.responsibilities.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+            <p className="skills">
+              <strong>Skills Used:</strong> {experience.skills.join(", ")}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -103,11 +107,11 @@ const Projects = () => {
   const projects = ProjectsData;
   return (
     <div className="projects-container">
-      <h2>Projects</h2>
+      <h2 className="projects-header">Projects</h2>
       <div className="projects-list">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h3 className="project-name">
+            <h2 className="project-name">
               {project.name}
               <a
                 href={project.githubLink}
@@ -119,15 +123,22 @@ const Projects = () => {
               </a>
               {project.demoLink && (
                 <a
-                  href={project.demoLink}
-                  target="_blank"
+                  href={project.name.includes("Portfolio") ? "#" : project.demoLink}
+                  target={project.name.includes("Portfolio") ? "" : "_blank"}
                   rel="noopener noreferrer"
                   className="demo-link"
                 >
                   <FaExternalLinkAlt />
                 </a>
               )}
-            </h3>
+            </h2>
+            <div className="image-container">
+              <img
+                src={project.name.includes("Portfolio") ? portfolio : zenmode}
+                alt="Geeky Illustration"
+                className="image-project"
+              />
+            </div>
             <p className="project-description">{project.description}</p>
           </div>
         ))}

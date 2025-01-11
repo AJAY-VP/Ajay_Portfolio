@@ -1,8 +1,11 @@
+import { FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
 const Footer = () => {
     return (
       <div className="footer">
         <p>
-          Contact Details: vpajay.99@gmail.com | +91 9445795614 |{" "}
+          Contact Details: vpajay.99@gmail.com |{" "}
           <a
             className="linkedin-link"
             rel="noopener noreferrer"
@@ -10,10 +13,16 @@ const Footer = () => {
             target="_blank"
           >
             {" "}
-            LinkedIn
-          </a>{" "}
+            <FaLinkedin className="footer-icon"/>
+          </a>{" "} |{" "} <a
+            className="leetcode-link"
+            rel="noopener noreferrer"
+            href="https://leetcode.com/u/user2229x/"
+            target="_blank"
+          >
+           <SiLeetcode className="footer-icon"/>
+          </a>
         </p>
-        <p>&copy; 2024 V P Ajay. All rights reserved.</p>
       </div>
     );
   };
