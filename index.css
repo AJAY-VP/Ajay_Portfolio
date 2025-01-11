@@ -236,7 +236,6 @@ li {
 }
 
 .experience-card{
-  margin-right: 2em;
   margin-bottom: 2em;
   border: 1px solid white;
   border-radius: 10px;
@@ -251,13 +250,20 @@ li {
 }
 
 .project-card{
-  margin-right: 2em;
   margin-bottom: 2em;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 4px 6px white;
   padding: 1.5rem;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:last-child {
+  margin-right: 0;
+}
+
+.experience-card:last-child {
+  margin-right: 0;
 }
 
 .project-description{
@@ -292,6 +298,7 @@ li {
   .experience-card{
     width: 50%;
     margin-top: 1em;
+    margin-right: 2em;
   }
 
   .projects-list{
@@ -302,6 +309,7 @@ li {
   .project-card{
     width: 50%;
     margin-top: 1em;
+    margin-right: 2em;
   }
   
   .text-container h2 {
