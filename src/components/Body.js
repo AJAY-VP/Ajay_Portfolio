@@ -49,7 +49,7 @@ const Skills = () => {
         <tbody>
           <tr>
             <td>Languages / Frameworks</td>
-            <td>Javascript, NodeJS, Angular 8+, Hasura, C++</td>
+            <td>Javascript, Node.js, Angular 8+, Hasura, C++</td>
           </tr>
           <tr>
             <td>Libraries</td>
