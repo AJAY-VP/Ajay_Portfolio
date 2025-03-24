@@ -11,13 +11,6 @@ import {
 const About = () => {
   return (
     <div className="about-me-container">
-      <div className="image-container">
-        <img
-          src={animatedPic}
-          alt="Geeky Illustration"
-          className="about-image"
-        />
-      </div>
       <div className="text-container">
         <h2>Hey I'm Ajay V P,</h2>
         <p>
@@ -30,6 +23,13 @@ const About = () => {
           development, production support, new feature integration, and full
           lifecycle projects from scratch.
         </p>
+      </div>
+      <div className="image-container">
+        <img
+          src={animatedPic}
+          alt="Geeky Illustration"
+          className="about-image"
+        />
       </div>
     </div>
   );
